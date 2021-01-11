@@ -23,11 +23,6 @@ Go inside project directory to execute the following command in order to
 run the app:
 **npx electron .**
 
-## Run the application
-The application is compiled in the dist folder. 
-To run the mongoDB implementation, It needs to have a mongoDB server running to use the application.
-To run the REST implementation, ...
-
 ## Run Rest impl
 It has to run the express http server first:
 **node server.js**
