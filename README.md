@@ -2,8 +2,10 @@
 Application developed for the course Application Integration.
 Developed in **node.js**, **electron** and views designed using the library **Materialize**.
 
-**There are 5 implementations:**
-- Using vectors
+![App demo](twitter-lite-demo.gif)
+
+
+**There are 3 implementations:**
 - Using a **NoSQL MongoDB** database.
 - Using a **Rest service**.
 - Using **Docker** and implementing **Microservices**
