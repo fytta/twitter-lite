@@ -2,14 +2,13 @@
 Application developed for the course Application Integration.
 Developed in **node.js**, **electron** and views designed using the library **Materialize**.
 
-![App demo](twitter-lite-demo.gif)
-
-
 **There are 3 implementations:**
 - Using a **NoSQL MongoDB** database.
 - Using a **Rest service**.
 - Using **Docker** and implementing **Microservices**
  - 2 microservices: users and tweets.
+
+![App demo](twitter-lite-demo.gif)
 
 # Libraries
 - electron
