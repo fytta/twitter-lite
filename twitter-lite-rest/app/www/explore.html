@@ -1,0 +1,56 @@
+<body>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/background.jpg">
+                </div>
+                <a href="#user"><img id="avatar-img" class="circle"></a>
+                <a href="#name"><span class="white-text name" id="lblUser"></span></a>
+                <a href="#email"><span class="white-text email" id="lblEmail"></span></a>
+            </div>
+        </li>
+        <li><a href="#" onclick="pages.explore.home()"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="#"><i class="material-icons">public</i>Explore</a></li>
+        <li><a href="#" onclick="pages.explore.people()"><i class="material-icons">people</i>People</a></li>
+        <li><a href="#" onclick="pages.explore.profile()"><i class="material-icons">person</i>Profile</a></li>
+        <li><a href="#" onclick="pages.explore.exit()"><i class="material-icons">exit_to_app</i>Exit</a></li>
+        <li><a class="waves-effect waves-light btn modal-trigger teal lighten-2" href="#modal"><i class="material-icons left">mail</i>Tweet</a></li>
+    </ul>
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div id="modal-happen" class="button_back modal-close">
+                <i class="material-icons" style="font-size: 22px;">arrow_back</i>
+                <p style="margin-left: 10px; ">BACK</p>
+            </div>
+            <h4 class="text-tweet">What is happening?</h4>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="txtTweet" class="materialize-textarea" data-length="120"></textarea>
+                    <label for="txtTweet">Enter text</label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-light btn teal lighten-2" onclick="pages.explore.sendTweet()">Tweet</a>
+        </div>
+    </div>
+    <main>
+        <nav style="position: fixed; z-index: 10;">
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form>
+                    <div class="input-field teal lighten-2">
+                        <input id="txtSearch" type="search" required placeholder="Search global tweets" onkeyup="pages.explore.refresh()">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <div id="tweets" style="margin-top:75px;">
+        </div>
+    </main>
+</body>

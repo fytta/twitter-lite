@@ -1,0 +1,113 @@
+<body>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/background.jpg">
+                </div>
+                <a href="#user"><img class="circle" id="avatar-img"></a>
+                <a href="#name"><span class="white-text name" id="lblUser"></span></a>
+                <a href="#email"><span class="white-text email" id="lblEmail"></span></a>
+            </div>
+        </li>
+        <li><a href="#" onclick="pages.profile.home()"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="#" onclick="pages.profile.explore()"><i class="material-icons">public</i>Explore</a></li>
+        <li><a href="#" onclick="pages.profile.people()"><i class="material-icons">people</i>People</a></li>
+        <li><a href="#"><i class="material-icons">person</i>Profile</a></li>
+        <li><a href="#" onclick="pages.profile.exit()"><i class="material-icons">exit_to_app</i>Exit</a></li>
+        <li><a class="waves-effect waves-light btn modal-trigger teal lighten-2" href="#modal"><i
+                    class="material-icons left">mail</i>Tweet</a></li>
+    </ul>
+    <!-- Update Modal Structure -->
+    <div id="update-modal" class="modal">
+        <div class="modal-content" id="update-modal-content" style="display: list-item; text-align: center;">
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+        </div>
+    </div>
+    <!-- Tweet Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div id="modal-happen" class="button_back modal-close">
+                <i class="material-icons" style="font-size: 22px;">arrow_back</i>
+                <p style="margin-left: 10px; ">BACK</p>
+            </div>
+            <h4 class="text-tweet">What is happening?</h4>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="txtTweet" class="materialize-textarea" data-length="120"></textarea>
+                    <label for="txtTweet">Enter text</label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-light btn teal lighten-2"
+                onclick="pages.home.sendTweet()">Tweet</a>
+        </div>
+    </div>
+    <main>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form>
+                    <div class="input-field teal lighten-2">
+                        <input id="txtSearch" type="search" required placeholder="Search people"
+                            onkeyup="pages.profile.refresh()">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <div id="card-panel-container">
+            <div>
+                <div class="card-panel" id="card-panel-reg">
+                    <form>
+                        <div class="avatar">
+                            <img class="circle" style="width: 100px;" id="profile-img">
+                        </div>
+                        <input id="file" type="file" style="visibility:hidden;" />
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="inputName" type="text" class="validate">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="inputSurname" type="text" class="validate">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="inputEmail" type="text" class="validate">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="inputPassw" type="password" class="validate">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">alternate_email</i>
+                                <input id="inputNick" class="validate">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <a href="#update-modal"
+                                    class="waves-effect waves-light btn modal-trigger teal lighten-2" style="width:100%"
+                                    onclick="pages.profile.updateUser()">Save</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>

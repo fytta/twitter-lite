@@ -1,0 +1,37 @@
+<body>
+    <div class="card-panel" style="max-width: 400px; width: 100%;">
+        <form>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">mail_outline</i>
+                    <input id="inputEmail" type="text" class="validate">
+                    <label for="lblEmail">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">lock_outline</i>
+                    <input id="inputPassw" type="password" class="validate">
+                    <label for="lblPassw">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <a class="waves-effect waves-light btn teal lighten-2" style="width:100%" onclick="pages.login.login()">Login</a>
+                </div>
+            </div>
+            <div class="row">
+                <label id="lblWrongLogin" style="color: red"></label>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <a href="#" onclick="pages.login.register()">Register now!</a>
+                </div>
+                <div class="col s6">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
