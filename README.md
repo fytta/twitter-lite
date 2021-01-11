@@ -21,6 +21,7 @@ npm install
 
 Go inside project directory to execute the following command in order to
 run the app:
+
 **npx electron .**
 
 ## Run Rest impl
