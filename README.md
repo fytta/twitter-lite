@@ -2,11 +2,8 @@
 Application developed for the course Application Integration.
 Developed in **node.js**, **electron** and views designed using the library **Materialize**.
 
-**There are 3 implementations:**
-- Using a **NoSQL MongoDB** database.
-- Using a **Rest service**.
-- Using **Docker** and implementing **Microservices**
- - 2 microservices: users and tweets.
+**NoSQL MongoDB** database.
+
 
 ![App demo](twitter-lite-demo.gif)
 
@@ -24,10 +21,6 @@ run the app:
 
 **npx electron .**
 
-## Run Rest impl
-It has to run the express http server first:
-
-**node server.js**
 
 # Refs
 https://materializecss.com/getting-started.html
